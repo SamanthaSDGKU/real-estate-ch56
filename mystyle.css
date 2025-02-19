@@ -35,19 +35,33 @@ img{
   letter-spacing: 3px;
   border-radius: 5px;
 }
+.bold-text{
+  font-weight: bold;
+  text-align: center;
+  margin:10px 0;
+}
+.light-text{
+  font-size: 14px;
+  text-align: center;
+  margin:10px 0;
+}
 /* header */
 .site-header {
   background-image: url(./img/header.jpg);
-  height: 400px;
+  height: 40vh;
   background-position: top center;
   color: white;
+}
+.contact-header{
+  background-color: orange;
+  height: 20vh;
 }
 .header-container {
   display :flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 50vh;
+  height: 35vh;
 }
 .menu-bar{
   display: flex;
@@ -59,6 +73,9 @@ img{
 .menu-bar a{
   margin-right:20px;
 }
+.contact-header a{
+  color:black;
+}
 /*about*/ 
 .about-container{
   display: flex;
@@ -66,9 +83,12 @@ img{
 .price{
   color:green;
 }
-
+.houses-container{
+  display:flex;
+}
 .houses-item{
   background-color: #dedede;
+  margin-right: 10px;
 }
 .houses-item-text{
   padding: 20px;
@@ -80,4 +100,75 @@ img{
 }
 .icon-item{
   display: flex;
+}
+
+/*contact*/
+
+.form-container{
+  background-color: lightgray;
+  padding: 15px;
+  border-radius: 10px;
+}
+fieldset{
+  padding: 10px;
+  border-radius: 10px;
+  border:1px dashed black;
+}
+legend{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.input-control{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input-control label{
+  display: inline-block;
+  width:20%;
+}
+.input-control input,
+.input-control textarea{
+  width:80%;
+  padding: 5px;
+  border: none;
+}
+
+.footer-contact{
+    background-color: #dedede;
+}
+.footer-container{
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.copyright-container{
+  display: flex;
+}
+.social-container{
+  display: flex;
+}
+.social-container a{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding:5px;
+  margin-right: 10px;
+}
+.social-container i{
+  text-align: center;
+  color:black; 
+  width:20px;
+  height: 20px;
+}
+.text-b-u{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.border-left{
+  border-left: 2px solid black;
+  padding-left: 10px;
+  margin-left: 10px;
 }
